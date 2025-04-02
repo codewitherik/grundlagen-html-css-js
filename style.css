@@ -1,0 +1,98 @@
+/**
+* Custom CSS
+* Copyright 2025 CodeWithErik
+* @license GNU
+* Author: CodeWithErik
+*/
+
+/* Custom CSS Property */
+:root {
+    --color-gold: gold;
+    --color-blue: blue;
+    --color-aqua: aqua;
+    --color-red: red;
+    --color-white: white;
+    --color-black: black;
+    
+    --font-family-boldonse: 'Boldonse', sans-serif;
+}
+
+/* Reset für den Browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: var(--font-family-boldonse);
+}
+
+/* Topbox Code */
+.topbox {
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+.topbox .logocontainer {
+    background-color: var(--color-aqua);
+    flex: 1;
+    text-align: center;
+}
+
+.topbox .maincontainer {
+    background-color: var(--color-aqua);
+    flex: 3;
+    text-align: center;
+}
+
+/* Middle Box Code */
+.middelbox {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.middelbox .subnavi {
+    flex: 1;
+    text-align: center;
+    color: var(--color-red);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.middelbox .bigcontainer {
+    flex: 3;
+    text-align: center;
+    color: var(--color-red);
+}
+
+/* Bottom Box Code */
+.bottombox {
+    display: flex;
+    background-color: var(--color-gold);
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-boldonse);
+    color: var(--color-black);
+}
+
+/* Einfache Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
